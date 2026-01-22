@@ -1,0 +1,258 @@
+.color-1 {
+    color: #ff0000;
+}
+
+.color-2 {
+    color: #00cc33;
+}
+
+.color-3 {
+    color: #ffcc00;
+}
+
+.color-4 {
+    color: #0066ff;
+}
+
+.color-5 {
+    color: #33FFFF;
+}
+
+.color-6 {
+    color: #fe9e10;
+}
+
+.color-7 {
+    color: #926f3e;
+}
+
+.color-8 {
+    color: #d2d2d2;
+}
+
+.color-9 {
+    color: #ffffff;
+}
+
+.gameColor-w {
+    color: #ffffff;
+}
+
+.gameColor-r {
+    color: #ff4444;
+}
+
+.gameColor-g {
+    color: #99cc00;
+}
+
+.gameColor-y {
+    color: #ffbb33;
+}
+
+.gameColor-b {
+    color: #33b5e5;
+}
+
+@font-face {
+    font-family: HapnaSlabSerif-DemiBold;
+    src: url(font/HapnaSlabSerif-DemiBold.ttf);
+}
+
+* {
+    font-family: var(--font-family) !important;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color);
+    font-size: 1.5vh;
+}
+
+.chat-window {
+    height: 25% !important;
+    background: inherit !important;
+}
+
+.chat-messages {
+    height: 100%;
+    margin: 0;
+    width: 80%;
+    font-size: inherit;
+    color: var(--text-color);
+    text-shadow: 2px 1px 1px #000000;
+}
+
+.msg {
+    margin: 0.5rem 0;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    padding: 0.75rem 1rem;
+    overflow-wrap: anywhere;
+    width: fit-content;
+
+    background-image: var(--main-background-url);
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.alt {
+    background-image: var(--message-icon-url);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: var(--text-color);
+}
+
+.console {
+    background-image: var(--console-icon-url);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
+}
+
+.join {
+    background-image: var(--join-icon-url);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
+}
+
+.quit {
+    background-image: var(--quit-icon-url);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
+}
+
+.user {
+    background-image: var(--user-icon-url);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+
+    padding-left: 1.5rem;
+}
+
+.print,
+.print * {
+    font-family: var(--font-family) !important;
+}
+
+.multiline {
+    margin-left: 0;
+    text-indent: 0;
+}
+
+.chat-input {
+    top: 28% !important;
+
+    font-size: inherit;
+}
+
+.chat-input>div.input {
+    align-items: center;
+    width: 86%;
+    transform: translateX(-1px);
+    background-image: var(--main-background-url);
+    background-size: 100% 100%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+    min-height: 100% !important;
+    padding: 0;
+    padding-left: 0.75rem;
+
+    resize: none;
+    box-sizing: content-box;
+
+    line-height: 1.5rem;
+    font-size: inherit;
+    text-overflow: ellipsis;
+
+    color: var(--text-color);
+    border-width: 0;
+    background-color: transparent;
+}
+
+.chat-input>div.input::after {
+    content: '';
+
+    height: 2.5rem;
+    width: 2.5rem;
+
+    background-image: var(--input-icon-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.75rem;
+}
+
+.prefix {
+    height: fit-content;
+    margin: 0;
+    padding-left: 1rem;
+
+    line-height: 1rem;
+    font-size: inherit;
+}
+
+.suggestions {
+    padding: 0.25rem 0.75rem;
+
+    font-size: inherit;
+    width: 86%;
+    color: var(--text-color);
+    background-image: var(--main-background-url);
+    background-size: 100% 100%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.help {
+    color: var(--faint-color);
+    font-weight: normal;
+}
+
+.disabled {
+    color: var(--faint-color);
+    font-weight: normal;
+}
+
+.suggestion {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.suggestion * {
+    font-family: var(--font-family) !important;
+}
+
+.chat-hide-state {
+    position: absolute;
+}
