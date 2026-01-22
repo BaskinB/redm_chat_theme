@@ -2,10 +2,10 @@ fx_version 'cerulean'
 game 'common'
 
 name 'redm_chat_theme'
-description 'mantine-styled theme for the chat resource.'
+description 'mantine-styled theme for the chat resource originally developed for Qbox.'
 version '1.0.0'
-author 'um - d4 | <qbox team>'
-repository 'https://github.com/Qbox-project/qbx_chat_theme'
+author 'BaskinB - um - d4 | <qbox team>'
+repository 'https://github.com/BaskinB/redm_chat_theme'
 
 -- we need chat to be able to access this resource's callbacks
 nui_callback_strict_mode 'false'
